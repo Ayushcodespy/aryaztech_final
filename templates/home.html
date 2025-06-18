@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="hero_section">
+    <model-viewer class="threed-model" data-aos="fade-left" src="/static/media/buster_drone.glb" camera-controls
+        disable-zoom auto-rotate shadow-intensity="0.7">
+    </model-viewer>
+    <div class="hero_info" data-aos="fade-right" data-aos-delay="100">
+        <h1>Your Vision, Our Code</h1>
+        <h2>We Offers
+            <span style="--i:4;" data-text="Website development">Website development</span>
+            <span style="--i:3;" data-text="Android app development">Android app development</span>
+            <span style="--i:2;" data-text="Windows software solutions">Windows software solutions</span>
+            <span style="--i:1;" data-text="Digital transformation service">Digital transformation service</span>
+        </h2>
+        <p>At <span class="highlighted-text">Arya Z-Tech</span>, we provide a diverse array of technology solutions
+            designed to
+            <br>
+            elevate your business. Our services encompass website development, Android app
+            <br>
+            creation, and Windows software development. We prioritize innovation and customization,
+            <br>
+            ensuring that each project aligns with your unique goals while delivering exceptional
+            <br>
+            support and expertise every step of the way.
+
+        <div class="btn_sci">
+            <a href="#" class="btn">Get In Touch</a>
+            <div class="sci">
+                <a href="#" class="bx bxl-linkedin"></a>
+                <a href="#" class="bx bxl-youtube"></a>
+                <a href="https://www.google.com/" class="bx bxl-instagram"></a>
+                <a href="https://github.com/Ayushcodespy" class="bx bxl-gmail"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="why-choose-us-section">
+    <div class="why-choose-us">
+        <h2>Why Choose Us</h2>
+        <div class="features">
+            <div class="feature" data-aos="fade-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                <img src="/static/media/expertise.png" alt="Expertise & Experience" class="feature-icon">
+                <h3>Expertise & Experience</h3>
+                <p>Our team consists of skilled professionals with years of experience in software development.</p>
+            </div>
+            <div class="feature" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                <img src="/static/media/customized.png" alt="Customized Solutions" class="feature-icon">
+                <h3>Customized Solutions</h3>
+                <p>We provide personalized services that align with your specific goals and requirements.</p>
+            </div>
+            <div class="feature" data-aos="fade-up" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                <img src="/static/media/consumer-centric.png" alt="Client-Centric Approach" class="feature-icon">
+                <h3>Client-Centric Approach</h3>
+                <p>Your satisfaction is our priority, and we maintain open communication throughout the project.</p>
+            </div>
+            <div class="feature" data-aos="fade-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
+                <img src="/static/media/support.png" alt="Ongoing Support" class="feature-icon">
+                <h3>Ongoing Support</h3>
+                <p>We offer ongoing support and maintenance to ensure your solutions continue to perform optimally.</p>
+            </div>
+        </div>
+</section>
+
+
+
+<section class="our-process">
+    <h2>Our Process</h2>
+    <div class="process-steps">
+        <div class="step" data-aos="fade-up" data-aos-delay="100">
+            <h3>Step 1: Consultation</h3>
+            <p>We start with a detailed consultation to understand your needs and goals.</p>
+        </div>
+
+        <div class="arrow bx bx-down-arrow" data-aos="fade-up"></div>
+
+        <div class="step" data-aos="fade-up">
+            <h3>Step 2: Planning</h3>
+            <p>Our team creates a comprehensive plan tailored to your project requirements.</p>
+        </div>
+
+        <div class="arrow bx bx-down-arrow" data-aos="fade-up"></div>
+
+        <div class="step" data-aos="fade-up">
+            <h3>Step 3: Development</h3>
+            <p>We develop the solution using the latest technologies and best practices.</p>
+        </div>
+
+        <div class="arrow bx bx-down-arrow" data-aos="fade-up"></div>
+
+        <div class="step" data-aos="fade-up">
+            <h3>Step 4: Testing</h3>
+            <p>Thorough testing is conducted to ensure quality and performance.</p>
+        </div>
+
+        <div class="arrow bx bx-down-arrow" data-aos="fade-up"></div>
+
+        <div class="step" data-aos="fade-up">
+            <h3>Step 5: Launch</h3>
+            <p>We launch the project and provide ongoing support to ensure success.</p>
+        </div>
+    </div>
+</section>
+
+<section class="subscribe_section" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+    <div class="subscriber_container">
+        <h1>Lets Convert Your Dream To Reality with <br>Arya Z-Tech</h1>
+        <form action="" method="post">
+            <div class="form_elements">
+                <input type="email" name="email_to_subscribe" placeholder="Enter Email">
+                <button class="subscribe_btn" type="submit">Subscribe</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+{% endblock content %}

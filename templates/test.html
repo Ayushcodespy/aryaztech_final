@@ -1,0 +1,237 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/static/styles/base_outer.css"> -->
+    <link rel="stylesheet" type="text/css" href="{% static '/styles/base_outer.css' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+
+
+    <style>
+        /*  */
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar" data-aos="fade-down" data-aos-delay="100">
+        <a href="#" class="logo">ARYA Z-TECH</a>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <ul id="menuList">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#"><button class="login_btn">Contact</button></a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="hero_section">
+            <model-viewer class="threed-model" data-aos="fade-left" src="/static/media/buster_drone.glb" camera-controls disable-zoom auto-rotate
+                shadow-intensity="0.7">
+            </model-viewer>
+            <div class="hero_info" data-aos="fade-right" data-aos-delay="100">
+                <h1>Your Vision, Our Code</h1>
+                <h2>We Offers 
+                    <span style="--i:4;" data-text="Website development">Website development</span>
+                    <span style="--i:3;" data-text="Android app development">Android app development</span>
+                    <span style="--i:2;" data-text="Windows software solutions">Windows software solutions</span>
+                    <span style="--i:1;" data-text="Digital transformation service">Digital transformation service</span>
+                </h2>
+                <p>At <span class="highlighted-text">Arya  Z-Tech</span>, we provide a diverse array of technology solutions designed to
+                    <br>
+                    elevate your business. Our services encompass website development, Android app
+                    <br>
+                    creation, and Windows software development. We prioritize innovation and customization,
+                    <br>
+                    ensuring that each project aligns with your unique goals while delivering exceptional
+                    <br>
+                     support and expertise every step of the way.
+
+                <div class="btn_sci">
+                    <a href="#" class="btn">Get In Touch</a>
+                    <div class="sci">
+                        <a href="#" class="bx bxl-linkedin"></a>
+                        <a href="#" class="bx bxl-youtube"></a>
+                        <a href="https://www.google.com/" class="bx bxl-instagram"></a>
+                        <a href="https://github.com/Ayushcodespy" class="bx bxl-gmail"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose-us-section">
+            <div class="why-choose-us">
+                <h2>Why Choose Us</h2>
+                <div class="features">
+                    <div class="feature" data-aos="fade-right" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000">
+                        <img src="/static/media/expertise.png" alt="Expertise & Experience" class="feature-icon">
+                        <h3>Expertise & Experience</h3>
+                        <p>Our team consists of skilled professionals with years of experience in software development.</p>
+                    </div>
+                    <div class="feature" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000">
+                        <img src="/static/media/customized.png" alt="Customized Solutions" class="feature-icon">
+                        <h3>Customized Solutions</h3>
+                        <p>We provide personalized services that align with your specific goals and requirements.</p>
+                    </div>
+                    <div class="feature" data-aos="fade-up" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000">
+                        <img src="/static/media/consumer-centric.png" alt="Client-Centric Approach" class="feature-icon">
+                        <h3>Client-Centric Approach</h3>
+                        <p>Your satisfaction is our priority, and we maintain open communication throughout the project.</p>
+                    </div>
+                    <div class="feature" data-aos="fade-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000">
+                        <img src="/static/media/support.png" alt="Ongoing Support" class="feature-icon">
+                        <h3>Ongoing Support</h3>
+                        <p>We offer ongoing support and maintenance to ensure your solutions continue to perform optimally.</p>
+                    </div>
+                </div>
+        </section>
+        
+
+
+        <section class="our-process">
+            <h2>Our Process</h2>
+            <div class="process-steps">
+                <div class="step" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Step 1: Consultation</h3>
+                    <p>We start with a detailed consultation to understand your needs and goals.</p>
+                </div>
+
+                <div class="arrow bx bx-down-arrow" data-aos="fade-up"></div>
+
+                <div class="step" data-aos="fade-up">
+                    <h3>Step 2: Planning</h3>
+                    <p>Our team creates a comprehensive plan tailored to your project requirements.</p>
+                </div>
+
+                <div class="arrow bx bx-down-arrow" data-aos="fade-up"></div>
+
+                <div class="step" data-aos="fade-up">
+                    <h3>Step 3: Development</h3>
+                    <p>We develop the solution using the latest technologies and best practices.</p>
+                </div>
+
+                <div class="arrow bx bx-down-arrow" data-aos="fade-up"></div>
+
+                <div class="step" data-aos="fade-up">
+                    <h3>Step 4: Testing</h3>
+                    <p>Thorough testing is conducted to ensure quality and performance.</p>
+                </div>
+
+                <div class="arrow bx bx-down-arrow" data-aos="fade-up"></div>
+
+                <div class="step" data-aos="fade-up">
+                    <h3>Step 5: Launch</h3>
+                    <p>We launch the project and provide ongoing support to ensure success.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe_section" data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">
+            <div class="subscriber_container">
+                <h1>Lets Convert Your Dream To Reality with <br>Arya Z-Tech</h1>
+                <form action="" method="post">
+                    <div class="form_elements">
+                        <input type="email" name="email_to_subscribe" placeholder="Enter Email">
+                        <button class="subscribe_btn" type="submit">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <div class="divider">
+            <div class="line"></div>
+        </div>
+
+
+        
+        
+        
+        
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <div class="footer_logo">
+                    <img src="/static/media/logo_green.png" alt="">
+                </div>
+                <h4>Arya Tech</h4>
+                <p>At Arya Tech, we provide innovative technology solutions tailored to your business needs.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="#">Terms & conditions</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">License & Agreements</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" class="bx bxl-linkedin"></a>
+                    <a href="#" class="bx bxl-youtube"></a>
+                    <a href="#" class="bx bxl-instagram"></a>
+                    <a href="#" class="bx bxl-gmail"></a>
+                </div>
+                <div class="address social-icons">
+                    <h4>Location</h4>
+                    <a href="#" class="bx bx-location-plus"></a>
+                </div>
+                <p>Satna, Madhya Pradesh, <br>India ,485001</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Arya Tech. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | Committed to delivering innovative technology solutions.</p>
+        </div>
+    </footer>
+
+    <script>
+        let menuList = document.getElementById('menuList')
+        menuList.style.maxHeight = "0px";
+
+        function toggleMenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "300px";
+            }
+
+            else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
+
+    <!-- Script for Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize AOS
+    </script>
+    
+</body>
+
+</html>
